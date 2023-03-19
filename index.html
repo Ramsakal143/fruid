@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        .outer {
+            height: 570px;
+            width: 100%;
+            background: url('./images/fluids.png ');
+            background-size: 100% 100%;
+        }
+
+        .inner {
+            padding-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <!--navbar start-->
+        <nav class="navbar py-2 fixed-top">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    <b class="text-dark fs-2 ms-3" style="position: relative; top: 8px;">Uber Eats</b>
+                </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                    </div>
+                    <div class="container">
+                        <div class="ms-3 me-4">
+                            <button class="bg-dark text-white fw-bold fs-5 text-center py-3 form-control">Sign up</button>
+                        </div>
+                        <div class="ms-3 mt-2 me-4">
+                            <button class="bg-white text-dark pt-3 fw-bold fs-5 text-center py-3 form-control">Log in</button>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 ps-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Create a business account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Add your restaurant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign up to deliver</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <button class="border-0 bg-white rounded-5 text-dark px-3 me-2 py-2 fs-6 fw-bold"><i
+                            class="bi bi-person-fill fs-5"></i> <span style="position: relative; top: -3px;">Log
+                            in</span></button>
+                    <button class="border-0 bg-dark rounded-5 text-white px-4 me-3 fs-6 fw-bold"
+                        style="padding-top: 12px; padding-bottom: 12px;">Sign up</button>
+
+                </div>
+            </div>
+        </nav>
+        <!--navbar end-->
+
+        <div class="inner container">
+            <b class="" style="font-size: 50px;">Order food to your door</b><br>
+            <div class="row pt-4">
+                <div class="col-sm-5 px-0">
+                    <div class="input-group bg-light">
+                        <span class="input-group-text bg-white border-0"><i
+                                class="bi bi-geo-alt-fill px-2 fs-3"></i></span>
+                        <input type="text" placeholder="Enter delivery address" class="form-control border-0"></input>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <select value="" class="form-control py-3 border-0">
+                        <option class="form-control py-3">
+                            <div> Deliver Now</div>
+                        </option>
+                        <option>Schedule for later</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 px-0">
+                    <div><button style="padding-top: 12px; padding-bottom: 15px;"
+                            class="border-0 rounded-3 bg-dark text-white px-3">Find Food</button></div>
+                </div>
+                <div class="col-sm-1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="d-flex mt-5 ">
+            <div class="col">
+                <div class="card" style="width: 21rem;">
+                    <img src="./images/order-1.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 21rem;">
+                    <img src="./images/order-2.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 21rem;">
+                    <img src="./images/order-3.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <b class="fs-2">Cities near me</b>
+            <div class="my-3">
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.8551339424143!2d83.07858927378999!3d25.24180382989552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3b89586b582f%3A0xb26df72fc6f53032!2sJivnathpur%2C%20Bharchha%2C%20Chandauli%20%2CUP!5e0!3m2!1sen!2sin!4v1679253032270!5m2!1sen!2sin"
+                    width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <table class="table table-borderless">
+                    <tr class="">
+                        <td>Akron</td>
+                        <td>Hartford</td>
+                        <td>Nashville</td>
+                        <td>Providence</td>
+                    </tr>
+                    <tr class="">
+                        <td>Albuquerque</td>
+                        <td>Houston</td>
+                        <td>New Orleans</td>
+                        <td>Queens</td>
+                    </tr>
+                    <tr class="">
+                        <td>Akron</td>
+                        <td>Hartford</td>
+                        <td>Nashville</td>
+                        <td>Providence</td>
+                    </tr>
+                    <tr class="">
+                        <td>Albuquerque</td>
+                        <td>Houston</td>
+                        <td>New Orleans</td>
+                        <td>Queens</td>
+                    </tr>
+                    <tr class="">
+                        <td>Akron</td>
+                        <td>Hartford</td>
+                        <td>Nashville</td>
+                        <td>Providence</td>
+                    </tr>
+                    <tr class="">
+                        <td>Albuquerque</td>
+                        <td>Houston</td>
+                        <td>New Orleans</td>
+                        <td>Queens</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mt-5">
+                <b class="fs-2">Countries with Uber Eats</b>
+                <div class="mt-3">
+                    <table class="table table-borderless">
+                        <tr class="">
+                            <td>Akron</td>
+                            <td>Hartford</td>
+                            <td>Nashville</td>
+                            <td>Providence</td>
+                        </tr>
+                        <tr class="">
+                            <td>Albuquerque</td>
+                            <td>Houston</td>
+                            <td>New Orleans</td>
+                            <td>Queens</td>
+                        </tr>
+                        <tr class="">
+                            <td>Akron</td>
+                            <td>Hartford</td>
+                            <td>Nashville</td>
+                            <td>Providence</td>
+                        </tr>
+                        <tr class="">
+                            <td>Albuquerque</td>
+                            <td>Houston</td>
+                            <td>New Orleans</td>
+                            <td>Queens</td>
+                        </tr>
+                        <tr class="">
+                            <td>Akron</td>
+                            <td>Hartford</td>
+                            <td>Nashville</td>
+                            <td>Providence</td>
+                        </tr>
+                        <tr class="">
+                            <td>Albuquerque</td>
+                            <td>Houston</td>
+                            <td>New Orleans</td>
+                            <td>Queens</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <div>
+                    <b class="fs-1">Uber Eats</b>
+                </div>
+                <div style="margin-top: 150px;">
+                    <div style="display: flex;">
+                        <div>
+                            <div style="display: flex; width: 190px;" class="bg-dark text-white rounded">
+                                <div class="mt-2"><i class="bi bi-apple fs-2 tex-white pt-5"></i> </div>
+                                <div class="ps-2">
+                                    <span style="font-size: 12px;">Download on the </span><br>
+                                    <span class="fs-3" style="position: relative; top:-6px;">App Store</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-2">
+                            <div style="display: flex; width: 190px;" class="bg-dark text-white rounded">
+                                <div class=" mt-2"><i class="bi bi-google-play fs-2 text-info pt-5"></i> </div>
+                                <div class="ps-2">
+                                    <span style="font-size: 12px;">GIT IT ON </span><br>
+                                    <span class="fs-3" style="position: relative; top:-6px;">Google Play</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-1"><i class="bi bi-facebook"></i></div>
+                        <div class="col-1"><i class="bi bi-twitter"></i></div>
+                        <div class="col-1"><i class="bi bi-instagram"></i></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>Get Help</td>
+                        <td>Restaurants near me</td>
+                    </tr>
+                    <tr>
+                        <td>Buy gift cards</td>
+                        <td>View all cities</td>
+                    </tr>
+                    <tr>
+                        <td> Add your restaurant</td>
+                        <td>View all cities</td>
+                    </tr>
+                    <tr>
+                        <td>Sign up to deliver</td>
+                        <td>View all countries</td>
+                    </tr>
+                    <tr>
+                        <td>Create a business account</td>
+                        <td> Pickup near me</td>
+                    </tr>
+                    <tr>
+                        <td>Promotions</td>
+                        <td> English</td>
+                    </tr>
+                </table>
+                <div class="row mt-5">
+                    <p class="text-end">© 2023 Uber Technologies Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
